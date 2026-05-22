@@ -70,23 +70,12 @@ const ContactPage = () => {
               </div>
             </div>
 
-            <div className="relative bg-primary h-[500px] lg:h-auto border border-border flex items-center justify-center overflow-hidden">
-               <div className="absolute inset-0 z-0">
-                  <img 
-                    src="https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_456b354c-fd21-4a15-9be7-00aa325f5eae.jpg" 
-                    alt="Global Network Map" 
-                    className="w-full h-full object-cover opacity-40 mix-blend-screen"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary via-transparent to-primary/80" />
-               </div>
-               <div className="relative z-10 w-full h-full flex flex-col items-center justify-center space-y-4 px-12">
-                  <div className="relative w-full max-w-lg aspect-square">
-                    <GlobePin x="30%" y="40%" label={lang === 'ja' ? '北京' : '北京'} />
-                    <GlobePin x="65%" y="35%" label={lang === 'ja' ? '東京' : '东京'} />
-                    <GlobePin x="45%" y="45%" label={lang === 'ja' ? 'ソウル' : '首尔'} />
-                  </div>
-                  <div className="text-[10px] font-mono font-bold tracking-[0.3em] uppercase text-white opacity-40 pt-12">{t('contact_vision')}</div>
-               </div>
+            <div className="relative bg-primary h-[500px] lg:h-auto border border-border overflow-hidden">
+               <img 
+                 src="https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_de057c11-be7d-460a-944f-dfb49aa5c5d4.jpg" 
+                 alt="Global Network Map" 
+                 className="w-full h-full object-cover"
+               />
             </div>
           </div>
         </div>
