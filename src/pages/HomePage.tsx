@@ -90,7 +90,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
       {/* Symbol Section */}
       <section className="py-24 bg-muted/30">
         <div className="max-w-[1440px] mx-auto px-4 md:px-8">
@@ -104,20 +103,37 @@ const HomePage = () => {
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4 h-48">
-              <div className="bg-primary/5 flex items-center justify-center border border-primary/10">
-                <span className="text-primary/20 text-4xl font-mono font-bold">CHN</span>
+              <div className="relative flex items-center justify-center border border-primary/10 overflow-hidden group">
+                <img 
+                  src="https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_9599f1ad-2306-44dc-922b-9c3566f59404.jpg" 
+                  alt="China" 
+                  className="absolute inset-0 w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" 
+                />
+                <div className="absolute inset-0 bg-primary/40" />
+                <span className="relative z-10 text-white text-4xl font-mono font-bold tracking-tighter">CHN</span>
               </div>
-              <div className="bg-accent/5 flex items-center justify-center border border-accent/10">
-                <span className="text-accent/40 text-4xl font-mono font-bold">JPN</span>
+              <div className="relative flex items-center justify-center border border-accent/10 overflow-hidden group">
+                <img 
+                  src="https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_3e9f706a-d8eb-43cf-9cc1-597704b8555b.jpg" 
+                  alt="Japan" 
+                  className="absolute inset-0 w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" 
+                />
+                <div className="absolute inset-0 bg-accent/40" />
+                <span className="relative z-10 text-white text-4xl font-mono font-bold tracking-tighter">JPN</span>
               </div>
-              <div className="bg-primary/5 flex items-center justify-center border border-primary/10">
-                <span className="text-primary/20 text-4xl font-mono font-bold">KOR</span>
+              <div className="relative flex items-center justify-center border border-primary/10 overflow-hidden group">
+                <img 
+                  src="https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_30651429-ea54-42bd-b342-ce6ca2a9b306.jpg" 
+                  alt="Korea" 
+                  className="absolute inset-0 w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" 
+                />
+                <div className="absolute inset-0 bg-primary/40" />
+                <span className="relative z-10 text-white text-4xl font-mono font-bold tracking-tighter">KOR</span>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* Products & Services Grid */}
       <section className="py-32">
         <div className="max-w-[1440px] mx-auto px-4 md:px-8">
@@ -145,7 +161,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
       {/* Advantages Section */}
       <section className="py-32 border-t border-border bg-white">
         <div className="max-w-[1440px] mx-auto px-4 md:px-8 text-center">
