@@ -136,7 +136,11 @@ const ProductsPage = () => {
             {itomModules.map((m, idx) => (
               <Card key={idx} className="rounded-none border-border bg-white hover:border-accent transition-all duration-300 overflow-hidden flex flex-col">
                 <div className="aspect-video w-full overflow-hidden transition-all duration-500">
-                  <img src={m.img} alt={t('nav_home') === '首页' ? m.name_zh : m.name_ja} className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
+                  <img 
+                    src={idx === 0 ? "https://miaoda-conversation-file.cdn.bcebos.com/user-bl1uekyfy41s/app-bloui2v2mnsx/20260522/基础监控.png" : m.img} 
+                    alt={t('nav_home') === '首页' ? m.name_zh : m.name_ja} 
+                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" 
+                  />
                 </div>
                 <CardHeader className="p-8">
                   <div className="flex items-center gap-4 mb-4">
