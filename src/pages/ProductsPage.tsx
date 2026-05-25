@@ -14,7 +14,7 @@ const ProductsPage = () => {
       desc_ja: 'サーバ、ネットワーク、ストレージ、データベースを統合監視。', 
       desc_zh: '统一监控服务器、网络设备、存储、数据库。', 
       icon: Server,
-      img: "../../public/images/product/01Basic.png"
+      img: "../images/product/01Basic.png"
     },
     { 
       name_ja: 'APM', 
@@ -22,7 +22,7 @@ const ProductsPage = () => {
       desc_ja: 'トランザクション分析、エンドユーザー体験を可視化。', 
       desc_zh: '事务分析、最终用户体验可视。', 
       icon: Activity,
-      img: "../../public/images/product/01APM.png"
+      img: "../images/product/01APM.png"
     },
     { 
       name_ja: 'ログ管理', 
@@ -30,7 +30,7 @@ const ProductsPage = () => {
       desc_ja: '集中ログ収集、パターン認識、自動クラスタリング。', 
       desc_zh: '集中日志采集、模式识别、自动聚类。', 
       icon: FileText,
-      img: "../../public/images/product/01Log.png"
+      img: "../images/product/01Log.png"
     },
     { 
       name_ja: 'アラート管理', 
@@ -38,7 +38,7 @@ const ProductsPage = () => {
       desc_ja: '相関分析、重複抑制、複数チャネル通知。', 
       desc_zh: '关联分析、去重、多渠道通知。', 
       icon: Bell,
-      img: "../../public/images/product/01alert.png"
+      img: "../images/product/01alert.png"
     },
     { 
       name_ja: 'クラウド監視', 
@@ -46,7 +46,7 @@ const ProductsPage = () => {
       desc_ja: 'AWS/Azure/Google等、マルチクラウドのメトリクス統合。', 
       desc_zh: 'AWS/Azure/Google等，多云环境指标统一。', 
       icon: Cloud,
-      img: "../../public/images/product/01Cloud.png"
+      img: "../images/product/01Cloud.png"
     },
     { 
       name_ja: '自動化', 
@@ -54,7 +54,7 @@ const ProductsPage = () => {
       desc_ja: '障害発生時にスクリプト実行、サービス再起動を自动化。', 
       desc_zh: '故障时自动执行脚本、重启服务。', 
       icon: Repeat,
-      img: "../../public/images/product/01Automation.png"
+      img: "../images/product/01Automation.png"
     },
     { 
       name_ja: 'CMDB', 
@@ -62,7 +62,7 @@ const ProductsPage = () => {
       desc_ja: '資産・構成アイテムの関係管理、ITIL連携。', 
       desc_zh: '资产与配置项关系管理、ITIL对接。', 
       icon: Database,
-      img: "../../public/images/product/01CMDB.png"
+      img: "../images/product/01CMDB.png"
     },
     { 
       name_ja: 'レポート', 
@@ -70,7 +70,7 @@ const ProductsPage = () => {
       desc_ja: 'リアルタイムダッシュボード、週次/月次サマリー。', 
       desc_zh: '实时仪表盘、周/月总结报告。', 
       icon: LayoutDashboard,
-      img: "../../public/images/product/01Report.png"
+      img: "../images/product/01Report.png"
     },
   ];
 
@@ -80,42 +80,42 @@ const ProductsPage = () => {
       name_zh: '异常检测', 
       desc_ja: '機械学習によるベースライン学習と閾値不要の検知。',
       desc_zh: '基于机器学习的基线学习和无阈值检测。',
-      img: "../../public/images/product/02Anomaly.png"
+      img: "../images/product/02Anomaly.png"
     },
     { 
       name_ja: '根因分析 (RCA)', 
       name_zh: '根因分析', 
       desc_ja: 'トポロジー相関を使用して数秒で根本原因を特定。',
       desc_zh: '使用拓扑关联在几秒钟内识别根本原因。',
-      img: "../../public/images/product/02Analysis.png"
+      img: "../images/product/02Analysis.png"
     },
     { 
       name_ja: '容量予測', 
       name_zh: '容量预测', 
       desc_ja: 'リソース不足を予測し、スケーリングの推奨事項を提供。',
       desc_zh: '预测资源短缺并提供扩缩容建议。',
-      img: "../../public/images/product/02Capacity.png"
+      img: "../images/product/02Capacity.png"
     },
     { 
       name_ja: '日志分析', 
       name_zh: '日志模式分析', 
       desc_ja: '大量のログデータからパターンを自動抽出。',
       desc_zh: '从海量日志数据中自动提取模式。',
-      img: "../../public/images/product/02Log.png"
+      img: "../images/product/02Log.png"
     },
     { 
       name_ja: '告警抑制', 
       name_zh: '智能告警抑制', 
       desc_ja: '相関関係によりアラートノイズを90%削減。',
       desc_zh: '通过关联将告警噪声减少 90%。',
-      img: "../../public/images/product/02Alert.png"
+      img: "../images/product/02Alert.png"
     },
     { 
       name_ja: 'AI助手', 
       name_zh: 'AI智能助手', 
       desc_ja: '運用サポートのための自然言語分析。',
       desc_zh: '用于运维支持的自然语言分析。',
-      img: "../../public/images/product/02AI.png"
+      img: "../images/product/02AI.png"
     },
   ];
 
@@ -137,7 +137,7 @@ const ProductsPage = () => {
               <Card key={idx} className="rounded-none border-border bg-white hover:border-accent transition-all duration-300 overflow-hidden flex flex-col">
                 <div className="aspect-video w-full overflow-hidden transition-all duration-500">
                   <img 
-                    src={idx === 0 ? "../../public/images/product/01Basic.png" : m.img} 
+                    src={idx === 0 ? "../.images/product/01Basic.png" : m.img} 
                     alt={t('nav_home') === '首页' ? m.name_zh : m.name_ja} 
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" 
                   />
@@ -161,7 +161,7 @@ const ProductsPage = () => {
 
           <div className="mt-16 p-8 bg-primary text-primary-foreground relative overflow-hidden">
             <div className="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
-              <img src="../../public/images/product/01Basic.png" alt="Platform" className="w-full h-full object-cover" />
+              <img src="../images/product/01Basic.png" alt="Platform" className="w-full h-full object-cover" />
             </div>
             <h3 className="relative z-10 text-sm font-mono font-bold uppercase tracking-[0.2em] mb-8 border-b border-primary-foreground/20 pb-4">{t('service_pkg_channels') === '渠道' ? '差异化特性' : '差別化要因'}</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
