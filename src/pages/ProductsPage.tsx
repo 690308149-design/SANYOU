@@ -137,7 +137,7 @@ const ProductsPage = () => {
               <Card key={idx} className="rounded-none border-border bg-white hover:border-accent transition-all duration-300 overflow-hidden flex flex-col">
                 <div className="aspect-video w-full overflow-hidden transition-all duration-500">
                   <img 
-                    src={idx === 0 ? "../.images/product/01Basic.png" : m.img} 
+                    src={idx === 0 ? "../images/product/01Basic.png" : m.img} 
                     alt={t('nav_home') === '首页' ? m.name_zh : m.name_ja} 
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" 
                   />
