@@ -14,7 +14,7 @@ const ProductsPage = () => {
       desc_ja: 'サーバ、ネットワーク、ストレージ、データベースを統合監視。', 
       desc_zh: '统一监控服务器、网络设备、存储、数据库。', 
       icon: Server,
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_a49472d8-0883-48e4-b82d-b6fb7f2e12ab.jpg"
+      img: "../../public/images/product/01Basic.png"
     },
     { 
       name_ja: 'APM', 
@@ -22,7 +22,7 @@ const ProductsPage = () => {
       desc_ja: 'トランザクション分析、エンドユーザー体験を可視化。', 
       desc_zh: '事务分析、最终用户体验可视。', 
       icon: Activity,
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_99c6c53c-d307-4584-82a6-db460586e843.jpg"
+      img: "../../public/images/product/01APM.png"
     },
     { 
       name_ja: 'ログ管理', 
@@ -30,7 +30,7 @@ const ProductsPage = () => {
       desc_ja: '集中ログ収集、パターン認識、自動クラスタリング。', 
       desc_zh: '集中日志采集、模式识别、自动聚类。', 
       icon: FileText,
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_d7e5f553-b52e-4bc9-8fe3-300646b1c629.jpg"
+      img: "../../public/images/product/01Log.png"
     },
     { 
       name_ja: 'アラート管理', 
@@ -38,7 +38,7 @@ const ProductsPage = () => {
       desc_ja: '相関分析、重複抑制、複数チャネル通知。', 
       desc_zh: '关联分析、去重、多渠道通知。', 
       icon: Bell,
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_a83d8edf-4e0a-4e98-91bb-6c5477c92b2a.jpg"
+      img: "../../public/images/product/01alert.png"
     },
     { 
       name_ja: 'クラウド監視', 
@@ -46,7 +46,7 @@ const ProductsPage = () => {
       desc_ja: 'AWS/Azure/Google等、マルチクラウドのメトリクス統合。', 
       desc_zh: 'AWS/Azure/Google等，多云环境指标统一。', 
       icon: Cloud,
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_80473d68-3e9a-4964-b6f5-d58ec9e96fea.jpg"
+      img: "../../public/images/product/01Cloud.png"
     },
     { 
       name_ja: '自動化', 
@@ -54,7 +54,7 @@ const ProductsPage = () => {
       desc_ja: '障害発生時にスクリプト実行、サービス再起動を自动化。', 
       desc_zh: '故障时自动执行脚本、重启服务。', 
       icon: Repeat,
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_2a81a134-ad4f-48bf-b1f6-16dd95575d4c.jpg"
+      img: "../../public/images/product/01Automation.png"
     },
     { 
       name_ja: 'CMDB', 
@@ -62,7 +62,7 @@ const ProductsPage = () => {
       desc_ja: '資産・構成アイテムの関係管理、ITIL連携。', 
       desc_zh: '资产与配置项关系管理、ITIL对接。', 
       icon: Database,
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_3ad8b1d2-8720-4085-a9bb-8c2e5a428819.jpg"
+      img: "../../public/images/product/01CMDB.png"
     },
     { 
       name_ja: 'レポート', 
@@ -70,7 +70,7 @@ const ProductsPage = () => {
       desc_ja: 'リアルタイムダッシュボード、週次/月次サマリー。', 
       desc_zh: '实时仪表盘、周/月总结报告。', 
       icon: LayoutDashboard,
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_ad1fb2a5-4633-46b0-9f2c-539cba1995fb.jpg"
+      img: "../../public/images/product/01Report.png"
     },
   ];
 
@@ -80,42 +80,42 @@ const ProductsPage = () => {
       name_zh: '异常检测', 
       desc_ja: '機械学習によるベースライン学習と閾値不要の検知。',
       desc_zh: '基于机器学习的基线学习和无阈值检测。',
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_62d929ea-a061-4368-a95a-5a46fc7ff7d2.jpg"
+      img: "../../public/images/product/02Anomaly.png"
     },
     { 
       name_ja: '根因分析 (RCA)', 
       name_zh: '根因分析', 
       desc_ja: 'トポロジー相関を使用して数秒で根本原因を特定。',
       desc_zh: '使用拓扑关联在几秒钟内识别根本原因。',
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_865d2fc9-ba0b-46ad-9a09-a01177f8da0d.jpg"
+      img: "../../public/images/product/02Analysis.png"
     },
     { 
       name_ja: '容量予測', 
       name_zh: '容量预测', 
       desc_ja: 'リソース不足を予測し、スケーリングの推奨事項を提供。',
       desc_zh: '预测资源短缺并提供扩缩容建议。',
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_8156323c-7668-4094-86aa-e65cc48c8198.jpg"
+      img: "../../public/images/product/02Capacity.png"
     },
     { 
       name_ja: '日志分析', 
       name_zh: '日志模式分析', 
       desc_ja: '大量のログデータからパターンを自動抽出。',
       desc_zh: '从海量日志数据中自动提取模式。',
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_3c740149-31f4-4e42-9903-8e1d79fd3210.jpg"
+      img: "../../public/images/product/02Log.png"
     },
     { 
       name_ja: '告警抑制', 
       name_zh: '智能告警抑制', 
       desc_ja: '相関関係によりアラートノイズを90%削減。',
       desc_zh: '通过关联将告警噪声减少 90%。',
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_34b05231-8162-4447-833d-c413582ab547.jpg"
+      img: "../../public/images/product/02Alert.png"
     },
     { 
       name_ja: 'AI助手', 
       name_zh: 'AI智能助手', 
       desc_ja: '運用サポートのための自然言語分析。',
       desc_zh: '用于运维支持的自然语言分析。',
-      img: "https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_ae77323c-01d3-44d8-bb2b-0262966b24bd.jpg"
+      img: "../../public/images/product/02AI.png"
     },
   ];
 
@@ -137,7 +137,7 @@ const ProductsPage = () => {
               <Card key={idx} className="rounded-none border-border bg-white hover:border-accent transition-all duration-300 overflow-hidden flex flex-col">
                 <div className="aspect-video w-full overflow-hidden transition-all duration-500">
                   <img 
-                    src={idx === 0 ? "https://miaoda-conversation-file.cdn.bcebos.com/user-bl1uekyfy41s/app-bloui2v2mnsx/20260522/基础监控.png" : m.img} 
+                    src={idx === 0 ? "../../public/images/product/01Basic.png" : m.img} 
                     alt={t('nav_home') === '首页' ? m.name_zh : m.name_ja} 
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" 
                   />
@@ -161,7 +161,7 @@ const ProductsPage = () => {
 
           <div className="mt-16 p-8 bg-primary text-primary-foreground relative overflow-hidden">
             <div className="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
-              <img src="https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_09f64278-753d-4463-9bba-34b87505cacf.jpg" alt="Platform" className="w-full h-full object-cover" />
+              <img src="../../public/images/product/01Basic.png" alt="Platform" className="w-full h-full object-cover" />
             </div>
             <h3 className="relative z-10 text-sm font-mono font-bold uppercase tracking-[0.2em] mb-8 border-b border-primary-foreground/20 pb-4">{t('service_pkg_channels') === '渠道' ? '差异化特性' : '差別化要因'}</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">

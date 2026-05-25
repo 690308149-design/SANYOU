@@ -72,7 +72,7 @@ const ContactPage = () => {
 
             <div className="relative bg-primary h-[500px] lg:h-auto border border-border overflow-hidden">
                <img 
-                 src="https://miaoda-site-img.cdn.bcebos.com/images/baidu_image_search_de057c11-be7d-460a-944f-dfb49aa5c5d4.jpg" 
+                 src="../../public/images/product/03Map.png" 
                  alt="Global Network Map" 
                  className="w-full h-full object-cover"
                />
