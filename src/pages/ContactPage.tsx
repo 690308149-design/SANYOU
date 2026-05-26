@@ -7,19 +7,9 @@ const ContactPage = () => {
 
   const offices = [
     {
-      city: lang === 'ja' ? '東京' : '东京',
+      city: lang === 'ja' ? '大阪' : lang === 'en' ? 'Osaka' : '大阪',
       address: t('contact_address_tokyo'),
       phone: t('contact_phone_tokyo'),
-    },
-    {
-      city: lang === 'ja' ? '北京' : '北京',
-      address: t('contact_address_beijing'),
-      phone: t('contact_phone_beijing'),
-    },
-    {
-      city: lang === 'ja' ? 'ソウル' : '首尔',
-      address: t('contact_address_seoul'),
-      phone: t('contact_phone_seoul'),
     },
   ];
 

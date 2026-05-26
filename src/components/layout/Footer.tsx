@@ -35,9 +35,8 @@ const Footer = () => {
           <div>
             <h4 className="font-mono text-sm font-bold mb-6 uppercase tracking-widest">{t('nav_contact')}</h4>
             <ul className="flex flex-col gap-3 text-sm text-primary-foreground/60">
-              <li>info@sanyou-tech.com</li>
-              <li>+81 3-1234-5678 (Tokyo)</li>
-              <li>+86 10-1234 5678 (Beijing)</li>
+              <li>contact@sanyucorp.co.jp</li>
+              <li>070-8991-7367 (Osaka)</li>
             </ul>
           </div>
         </div>
