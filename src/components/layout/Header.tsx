@@ -26,7 +26,7 @@ const Header = () => {
     { name: t('nav_contact'), path: `/${lang}/contact` },
   ];
 
-  const handleLanguageChange = (newLang: 'ja' | 'zh') => {
+  const handleLanguageChange = (newLang: 'ja' | 'zh' | 'en') => {
     if (newLang === lang) return;
     const newPath = location.pathname.replace(`/${lang}`, `/${newLang}`);
     setLanguage(newLang);
@@ -67,15 +67,18 @@ const Header = () => {
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="sm" className="flex items-center gap-2 px-3">
                 <Globe className="w-4 h-4" />
-                <span className="text-sm font-mono">{lang === 'ja' ? 'JP' : 'CN'}</span>
+                <span className="text-sm font-mono">{lang === 'ja' ? 'JP' : lang === 'zh' ? 'CN' : 'EN'}</span>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-32">
               <DropdownMenuItem onClick={() => handleLanguageChange('ja')}>
-                日本语 (JP)
+                日本語 (JP)
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => handleLanguageChange('zh')}>
                 中文 (CN)
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => handleLanguageChange('en')}>
+                English (EN)
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -92,6 +95,7 @@ const Header = () => {
             <DropdownMenuContent align="end">
               <DropdownMenuItem onClick={() => handleLanguageChange('ja')}>日本语</DropdownMenuItem>
               <DropdownMenuItem onClick={() => handleLanguageChange('zh')}>中文</DropdownMenuItem>
+              <DropdownMenuItem onClick={() => handleLanguageChange('en')}>English</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           

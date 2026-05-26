@@ -15,9 +15,9 @@ const LanguageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) 
   const location = useLocation();
 
   useEffect(() => {
-    if (lang === 'ja' || lang === 'zh') {
+    if (lang === 'ja' || lang === 'zh' || lang === 'en') {
       if (lang !== currentLang) {
-        setLanguage(lang as 'ja' | 'zh');
+        setLanguage(lang as 'ja' | 'zh' | 'en');
       }
     } else {
       // Default to ja if invalid lang or no lang
@@ -26,7 +26,7 @@ const LanguageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) 
     }
   }, [lang, currentLang, setLanguage, navigate, location.pathname]);
 
-  if (lang !== 'ja' && lang !== 'zh') return null;
+  if (lang !== 'ja' && lang !== 'zh' && lang !== 'en') return null;
 
   return <>{children}</>;
 };
@@ -51,14 +51,19 @@ export const routes = [
   { path: '/', public: true },
   { path: '/ja', public: true },
   { path: '/zh', public: true },
+  { path: '/en', public: true },
   { path: '/ja/products', public: true },
   { path: '/zh/products', public: true },
+  { path: '/en/products', public: true },
   { path: '/ja/services', public: true },
   { path: '/zh/services', public: true },
+  { path: '/en/services', public: true },
   { path: '/ja/about', public: true },
   { path: '/zh/about', public: true },
+  { path: '/en/about', public: true },
   { path: '/ja/contact', public: true },
   { path: '/zh/contact', public: true },
+  { path: '/en/contact', public: true },
 ];
 
 export default AppRoutes;

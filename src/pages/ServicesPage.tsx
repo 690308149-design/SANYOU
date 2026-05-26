@@ -5,7 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { CheckCircle2, Clock, Zap, Headphones } from 'lucide-react';
 
 const ServicesPage = () => {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
 
   return (
     <div className="flex flex-col w-full">
@@ -121,12 +121,14 @@ const ServicesPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { level_ja: "標準", level_zh: "标准", channels: t('service_pkg_standard_channels'), response: t('service_pkg_standard_response') },
-              { level_ja: "アドバンス", level_zh: "高级", channels: t('service_pkg_advanced_channels'), response: t('service_pkg_advanced_response'), featured: true },
-              { level_ja: "プレミアム", level_zh: "尊享", channels: t('service_pkg_exclusive_channels'), response: t('service_pkg_exclusive_response') }
+              { level_ja: "標準", level_zh: "标准", level_en: "Standard", channels: t('service_pkg_standard_channels'), response: t('service_pkg_standard_response') },
+              { level_ja: "アドバンス", level_zh: "高级", level_en: "Advanced", channels: t('service_pkg_advanced_channels'), response: t('service_pkg_advanced_response'), featured: true },
+              { level_ja: "プレミアム", level_zh: "尊享", level_en: "Premium", channels: t('service_pkg_exclusive_channels'), response: t('service_pkg_exclusive_response') }
             ].map((pkg, i) => (
               <div key={i} className={`p-8 border-2 ${pkg.featured ? 'border-accent bg-accent/5' : 'border-border'} flex flex-col gap-6`}>
-                <h3 className="text-xl font-bold text-primary font-mono uppercase tracking-widest">{t('nav_home') === '首页' ? pkg.level_zh : pkg.level_ja}</h3>
+                <h3 className="text-xl font-bold text-primary font-mono uppercase tracking-widest">
+                  {lang === 'zh' ? pkg.level_zh : lang === 'en' ? pkg.level_en : pkg.level_ja}
+                </h3>
                 <div className="space-y-4 text-sm font-sans">
                   <div className="flex justify-between border-b pb-2">
                     <span className="text-primary/40 uppercase text-[10px] font-bold">{t('service_pkg_channels')}</span>
