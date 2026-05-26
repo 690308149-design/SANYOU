@@ -7,7 +7,7 @@ const ContactPage = () => {
 
   const offices = [
     {
-      city: lang === 'ja' ? '東京' : '东京',
+      city: lang === 'ja' ? '大阪' : '大阪',
       address: t('contact_address_tokyo'),
       phone: t('contact_phone_tokyo'),
     },
